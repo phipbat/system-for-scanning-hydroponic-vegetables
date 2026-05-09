@@ -38,11 +38,11 @@
    ```bash
    php artisan migrate
    ```
-7. เริ่มทำงาน Server:
+7. เริ่มทำงาน Server (เพื่อให้แอปมือถือเชื่อมต่อได้):
    ```bash
-   php artisan serve
+   php artisan serve --host=0.0.0.0 --port=8000
    ```
-   *Server จะรันอยู่ที่ http://127.0.0.1:8000*
+   *หมายเหตุ: การใช้ `--host=0.0.0.0` จะช่วยให้มือถือที่อยู่ใน WiFi เดียวกันสามารถเรียกใช้งาน API ได้*
 
 ---
 
@@ -77,7 +77,7 @@
 ## 🚀 คำสั่งที่สำคัญ (Cheat Sheet)
 
 ### Backend (Laravel)
-- `php artisan serve` - รัน API Server
+- `php artisan serve --host=0.0.0.0` - รัน API Server (รองรับการเชื่อมต่อจากมือถือ)
 - `php artisan migrate:fresh --seed` - ล้างฐานข้อมูลและลงข้อมูลตัวอย่างใหม่
 - `php artisan route:list` - ดูรายการ API Endpoints ทั้งหมด
 - `php artisan make:controller NameController` - สร้าง Controller ใหม่

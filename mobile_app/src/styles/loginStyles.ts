@@ -1,0 +1,146 @@
+import { StyleSheet } from 'react-native';
+import { scale, verticalScale, moderateScale } from '../utils/responsive';
+
+export const loginStyles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#ffffff',
+    },
+    scrollContent: {
+        flexGrow: 1,
+        justifyContent: 'center',
+        paddingHorizontal: scale(30),
+        paddingBottom: verticalScale(50),
+    },
+    backButton: {
+        position: 'absolute',
+        top: verticalScale(60),
+        left: scale(20),
+        zIndex: 10,
+        width: scale(44),
+        height: scale(44),
+        borderRadius: scale(22),
+        backgroundColor: '#ffffff',
+        justifyContent: 'center',
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
+        elevation: 3,
+    },
+    logoContainer: {
+        alignItems: 'center',
+        marginBottom: verticalScale(40),
+        marginTop: verticalScale(80),
+    },
+    iconCircle: {
+        width: scale(80),
+        height: scale(80),
+        backgroundColor: 'transparent',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: verticalScale(20),
+    },
+    title: {
+        fontSize: moderateScale(32),
+        fontWeight: 'bold',
+        color: '#1a1a2e',
+        marginBottom: verticalScale(8),
+    },
+    subtitle: {
+        fontSize: moderateScale(15),
+        color: '#666',
+        textAlign: 'center',
+    },
+    formContainer: {
+        width: '100%',
+    },
+    inputGroup: {
+        marginBottom: verticalScale(20),
+    },
+    label: {
+        fontSize: moderateScale(14),
+        fontWeight: '600',
+        color: '#1a1a2e',
+        marginBottom: verticalScale(8),
+        marginLeft: scale(4),
+    },
+    inputWrapper: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#ffffff',
+        borderRadius: scale(16),
+        borderWidth: 1,
+        borderColor: '#E0E0E0',
+        paddingHorizontal: scale(15),
+        height: verticalScale(56),
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.02,
+        shadowRadius: 4,
+        elevation: 1,
+    },
+    inputWrapperActive: {
+        borderColor: '#2E7D32',
+        shadowColor: '#2E7D32',
+        shadowOpacity: 0.1,
+    },
+    inputIcon: {
+        marginRight: scale(10),
+    },
+    input: {
+        flex: 1,
+        fontSize: moderateScale(16),
+        color: '#1a1a2e',
+        height: '100%',
+    },
+    eyeIcon: {
+        padding: scale(5),
+    },
+    forgotPassword: {
+        alignSelf: 'flex-end',
+        marginBottom: verticalScale(30),
+    },
+    forgotPasswordText: {
+        color: '#2E7D32',
+        fontSize: moderateScale(14),
+        fontWeight: '600',
+    },
+    loginButton: {
+        height: verticalScale(56),
+        backgroundColor: '#ffffff',
+        borderRadius: scale(16),
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'row',
+        borderWidth: 1.5,
+        borderColor: '#2E7D32',
+        shadowColor: '#2E7D32',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.1,
+        shadowRadius: 8,
+        elevation: 3,
+        marginBottom: verticalScale(25),
+    },
+    loginButtonText: {
+        color: '#2E7D32',
+        fontSize: moderateScale(17),
+        fontWeight: 'bold',
+    },
+    registerContainer: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    noAccountText: {
+        color: '#666',
+        fontSize: moderateScale(15),
+    },
+    registerText: {
+        color: '#2E7D32',
+        fontSize: moderateScale(15),
+        fontWeight: 'bold',
+        marginLeft: scale(5),
+    }
+});

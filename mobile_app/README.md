@@ -1,42 +1,42 @@
-# Professional Expo Project
+# Mobile Application for Scanning Hydroponic Vegetables
 
-This is a modern, professional React Native application built with **Expo SDK**.
+แอปพลิเคชันมือถือสำหรับระบบตรวจสอบและวิเคราะห์ผักไฮโดรโปนิกส์ พัฒนาด้วย React Native และ Expo
 
-## 🚀 Getting Started
+## ความต้องการขั้นต้น
+- Node.js (LTS)
+- npm หรือ yarn
+- แอปพลิเคชัน Expo Go บนมือถือ
 
-### Prerequisites
-- [Node.js](https://nodejs.org/) (LTS)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
-- [Expo Go](https://expo.dev/expo-go) app on your device
-
-### Installation
-1. Clone the repository
-2. Install dependencies:
+## การติดตั้ง
+1. เข้ามายังโฟลเดอร์โปรเจกต์:
+   ```bash
+   cd mobile_app
+   ```
+2. ติดตั้ง dependencies:
    ```bash
    npm install
    ```
 
-### Running the App
-- **Start Metro Bundler:** `npm start`
-- **Run on Android:** `npm run android`
-- **Run on iOS:** `npm run ios`
-- **Run on Web:** `npm run web`
+## การใช้งาน
+- เริ่มทำงาน Metro Bundler: `npx expo start`
+- รันบน Android: `npx expo run:android`
+- รันบน iOS: `npx expo run:ios`
+- รันบน Web: `npx expo start --web`
 
-## 📁 Project Structure
-- `src/` - Core application logic
-- `src/components/` - Reusable UI components
-- `src/screens/` - App screens/pages
-- `src/styles/` - Global styles, colors, and typography
-- `src/services/` - External services (Firebase, etc.)
-- `assets/` - Static assets (images, fonts, etc.)
+## โครงสร้างโปรเจกต์
+- `src/` - โค้ดหลักของแอปพลิเคชัน
+- `src/components/` - ส่วนประกอบ UI ที่ใช้ซ้ำได้
+- `src/screens/` - หน้าจอต่างๆ ของแอป
+- `src/styles/` - การตั้งค่าสไตล์ สี และฟอนต์
+- `src/services/` - ส่วนเชื่อมต่อ API และบริการภายนอก
+- `assets/` - ไฟล์รูปภาพและฟอนต์
 
-## 🛠 Features & Tooling
-- **Firebase Connected**: Configured for Auth and Firestore (Project: app-hydroponic).
-- **TypeScript Integration**: Full type safety with modular architecture.
-- **New Architecture** enabled for better performance.
-- **Prettier & EditorConfig** for consistent code style.
-- **Path Aliases** (`@/*` maps to `src/*`) for cleaner imports.
-- **Optimized Assets** for production-ready performance.
+## ฟีเจอร์หลัก
+- การเชื่อมต่อกับระบบหลังบ้านผ่าน API
+- ระบบจัดการ Token และการพิสูจน์ตัวตน
+- การวิเคราะห์ภาพถ่ายผักผ่านกล้อง
+- ระบบแจ้งเตือนและประวัติการทำงาน
+- รองรับการทำงานแบบ Real-time
 
-## 📝 License
+## ใบอนุญาต
 MIT
